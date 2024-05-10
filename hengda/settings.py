@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*lh*yp@h_&*3n9cm)6+@@ol((^lt61^$=%g$*5lzi74dna5z4r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -100,7 +100,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hengda',
         'USER': 'root',
-        'PASSWORD': 'Master20',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'POST': '3306',
     }
