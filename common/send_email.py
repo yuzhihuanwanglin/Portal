@@ -8,7 +8,7 @@
 """
 import os
 
-import pythoncom
+# import pythoncom
 from django.core.mail import send_mail
 from django.db.models.signals import post_init, post_save
 from django.dispatch import receiver
@@ -77,7 +77,7 @@ def post_save_resume(sender, instance, **kwargs):
         template.save(filename)
 
         # 调用CoInitialize创建pdf文档
-        pythoncom.CoInitialize()
+        # pythoncom.CoInitialize()
         # word转pdf
         if os.path.exists(filename):# 判断是否存在该word文件
             pdf_filename = "%s/media/contact/recruit/%s_%d.pdf" % (os.getcwd(), instance.name, instance.id)
