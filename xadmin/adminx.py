@@ -51,8 +51,8 @@ xadmin.site.register(views.BaseAdminView, BaseSetting)
 
 # x admin 全局配置参数信息设置
 class GlobalSettings(object):
-    site_title = '恒达科技管理后台'
-    site_footer = '恒达科技有限公司'
+    site_title = '逻存信息科技管理后台'
+    site_footer = '逻存信息科技有限公司'
     # 收起菜单
     menu_style = 'accordion'
 

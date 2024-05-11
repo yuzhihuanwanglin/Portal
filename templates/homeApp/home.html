@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}
-    首页_恒达科技
+    首页_逻存信息科技
 {% endblock %}
 {% block content %}
 
@@ -46,7 +46,7 @@
                 <div style="margin-top:20px;">
                     <img class="img-responsive" src="{% static 'img/aboutCompany.jpg' %}">
                     <p class="text1">
-                        恒达科技有限企业，位于中国某高新技术产业开发区,
+                        逻存信息科技有限企业，位于中国某高新技术产业开发区,
                         以社会公共安全领域为主要应用方向，提供极速、准确和防伪装的人脸识别产品。
                     </p>
                 </div>
@@ -141,28 +141,7 @@
             </div>
 
             <div class="col-md-4">
-                <!-- 科研基地 -->
-                <span class="part1">
-        <a href="{% url 'scienceApp:science' %}">科研基地</a>
-      </span>
-                <span class="part1 en">
-        &nbsp;&nbsp;/ Technology Center
-      </span>
-                <div class="line1">
-                    <div class="line2 theme"></div>
-                </div>
-                <div>
-                    <a href="{% url 'scienceApp:science' %}">
-                        <img class="img-responsive" src="{% static 'img/ky.jpg' %}">
-                    </a>
-                    <p class="text1">
-                        <font color="#d30a1c">恒达科技科研基地</font>
-                        恒达科研基地分为计算机视觉、 机器人和视觉深度学习三个事业部，共拥有高级研发人员近30名，
-                        以各领域高级工程师和知名院校博士为主体的多层次研发梯队。当前，科研基地优秀的技术团队
-                        已为恒达在人脸识别、物联网平台搭建、机器人导航等 领域打下了坚实基础
-                    </p>
-                </div>
-
+                
             </div>
 
             <div class="col-md-4">
@@ -178,15 +157,9 @@
                 </div>
                 <div>
                     <ul class="list-unstyled procurement-li">
-                        <li>业务质询一：111-XXXXXX</li>
-                        <li>业务质询二：222-XXXXXX</li>
-                        <li>咨询电话：0111-XXXXXX</li>
-                        <li>企业传真：0222-XXXXXX</li>
-                        <li>地址：某某某新区某某大道1号</li>
-                        <li>邮编：XXXXXX</li>
-                        <li>
-                            网址：<a href="http://python3web.com">http://python3web.com</a>
-                        </li>
+                        <li>QQ: 278245002</li>
+                        <li>邮箱：278245002@qq.com</li>
+                        <li><span>网址：</span><a href="http://jade20.cn:8001">http://jade20.cn:8001</a></li>
                     </ul>
                     <div class="platform"><a href="{% url 'contactApp:contact' %}">详情</a></div>
                 </div>
@@ -224,7 +197,8 @@
                                             <a href="{% url 'productsApp:products_details' product.id %}"
                                                class="thumbnail">
 
-                                                <img src="{{ product.photo.url }}" alt="产品图片" class="img-responsive" onload="DrawImage(this)">
+                                                <img src="{{ product.photo.url }}" alt="产品图片" class="img-responsive"
+                                                     onload="DrawImage(this)">
 
 
                                             </a>

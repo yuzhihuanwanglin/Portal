@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    联系我们_恒达科技
+    联系我们_逻存信息科技
 {% endblock %}
 
 {% block content %}
@@ -18,16 +18,16 @@
             <!--侧边栏-->
             <div class="col-md-3">
                 <div class="model-title">
-                    人才招聘
+                    关于逻存
                 </div>
                 <div class="model-list">
                     <ul class="list-group">
                         <li class="list-group-item" id="contact">
                             <a class="link-color" href="{% url 'contactApp:contact' %}">联系我们</a>
                         </li>
-                        <li class="list-group-item" id="recruit">
-                            <a href="{% url 'contactApp:recruit' %}">加入恒达</a>
-                        </li>
+{#                        <li class="list-group-item" id="recruit">#}
+{#                            <a href="{% url 'contactApp:recruit' %}">加入恒达</a>#}
+{#                        </li>#}
                     </ul>
                 </div>
             </div>
@@ -40,16 +40,11 @@
                     <!--信息-->
                     <div class="col-md-4">
                         <div class="contact-left">
-                            <h2>恒达科技有限公司</h2>
-                            <span>HengDa Science and Technology</span>
+                            <h2>逻存信息科技有限公司</h2>
                             <ul>
-                                <li><span>业务咨询一：</span>111-111111</li>
-                                <li><span>业务咨询二：</span>222-222222</li>
-                                <li><span>咨询电话：</span>0111-111111111</li>
-                                <li><span>企业传真：</span>0222-222222222</li>
-                                <li><span>地址：</span>广东省深圳市南山街道408</li>
-                                <li><span>邮编：</span>567389</li>
-                                <li><span>网址：</span><a href="http://tianxiao.work">http://tianxiao.work</a></li>
+                                <li>QQ: 278245002</li>
+                                <li>邮箱：278245002@qq.com</li>
+                                <li><span>网址：</span><a href="http://jade20.cn:8001">http://jade20.cn:8001</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,10 +88,10 @@
                                     src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
                         </head>
 
-                        <body>
-                        <!--百度地图容器-->
-                        <div style="width:500px;height:450px;border:#ccc solid 1px;" id="dituContent"></div>
-                        </body>
+{#                        <body>#}
+{#                        <!--百度地图容器-->#}
+{#                        <div style="width:500px;height:450px;border:#ccc solid 1px;" id="dituContent"></div>#}
+{#                        </body>#}
                         <script type="text/javascript">
                             //创建和初始化地图函数：
                             function initMap() {
@@ -143,7 +138,7 @@
 
                             //标注点数组
                             var markerArr = [{
-                                title: "恒达科技有限公司",
+                                title: "逻存信息科技有限公司",
                                 content: "虚假标记，只为学习",
                                 point: "114.123517|22.561106",
                                 isOpen: 0,

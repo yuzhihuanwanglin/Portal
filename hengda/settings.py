@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'newsApp',      # 新闻动态
     'productsApp',  # 产品中心
     'serviceApp',   # 服务支持
-    'scienceApp',   # 科研基地
+    # 'scienceApp',   # 科研基地
     # xadmin后台
     'xadmin',
     'crispy_forms',
