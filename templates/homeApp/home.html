@@ -44,7 +44,7 @@
                     <div class="line2 theme"></div>
                 </div>
                 <div style="margin-top:20px;">
-                    <img class="img-responsive" src="{% static 'img/aboutCompany.jpg' %}">
+{#                    <img class="img-responsive" src="{% static 'img/aboutCompany.jpg' %}">#}
                     <p class="text1">
                         逻存信息科技有限企业，位于中国某高新技术产业开发区,
                         以社会公共安全领域为主要应用方向，提供极速、准确和防伪装的人脸识别产品。
@@ -141,7 +141,7 @@
             </div>
 
             <div class="col-md-4">
-                
+
             </div>
 
             <div class="col-md-4">
@@ -161,64 +161,64 @@
                         <li>邮箱：278245002@qq.com</li>
                         <li><span>网址：</span><a href="http://jade20.cn:8001">http://jade20.cn:8001</a></li>
                     </ul>
-                    <div class="platform"><a href="{% url 'contactApp:contact' %}">详情</a></div>
+{#                    <div class="platform"><a href="{% url 'contactApp:contact' %}">详情</a></div>#}
                 </div>
 
             </div>
 
         </div>
 
-        <div class="row row-3">
-            <!-- 产品中心 -->
-            <div class="col-md-12 col-pro">
+{#        <div class="row row-3">#}
+{#            <!-- 产品中心 -->#}
+{#            <div class="col-md-12 col-pro">#}
+{##}
+{#      <span class="part1">#}
+{#        <a href="{% url 'productsApp:products' 'robot' %}">产品中心</a>#}
+{#      </span>#}
+{#                <span class="part1 en">#}
+{#        &nbsp;&nbsp;/ Products#}
+{#      </span>#}
+{#                <a class="btn btn-default btn-xs more-btn" href="{% url 'productsApp:products' 'robot' %}">#}
+{#                    +&nbsp;更多#}
+{#                </a>#}
+{#                <div class="line1" style="margin-bottom:5px;">#}
+{#                    <div class="line2 theme"></div>#}
+{#                </div>#}
+{#                <div class="col-md-12 col-pro">#}
+{#                    <div id="Carousel" class="carousel slide" style="margin-bottom:30px">#}
+{#                        <ol class="carousel-indicators" style="display:none;">#}
+{#                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>#}
+{#                        </ol>#}
+{#                        <div class="carousel-inner">#}
+{#                            <div class="item active">#}
+{#                                <div class="row">#}
+{#                                    {% for product in productList %}#}
+{#                                        <div class="col-md-3 pro-images">#}
+{#                                            <a href="{% url 'productsApp:products_details' product.id %}"#}
+{#                                               class="thumbnail">#}
+{##}
+{#                                                <img src="{{ product.photo.url }}" alt="产品图片" class="img-responsive"#}
+{#                                                     onload="DrawImage(this)">#}
+{##}
+{##}
+{#                                            </a>#}
+{#                                            <div class="carousel-caption nav-title">{{ product.title }}</div>#}
+{#                                        </div>#}
+{#                                    {% endfor %}#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
 
-      <span class="part1">
-        <a href="{% url 'productsApp:products' 'robot' %}">产品中心</a>
-      </span>
-                <span class="part1 en">
-        &nbsp;&nbsp;/ Products
-      </span>
-                <a class="btn btn-default btn-xs more-btn" href="{% url 'productsApp:products' 'robot' %}">
-                    +&nbsp;更多
-                </a>
-                <div class="line1" style="margin-bottom:5px;">
-                    <div class="line2 theme"></div>
-                </div>
-                <div class="col-md-12 col-pro">
-                    <div id="Carousel" class="carousel slide" style="margin-bottom:30px">
-                        <ol class="carousel-indicators" style="display:none;">
-                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="row">
-                                    {% for product in productList %}
-                                        <div class="col-md-3 pro-images">
-                                            <a href="{% url 'productsApp:products_details' product.id %}"
-                                               class="thumbnail">
-
-                                                <img src="{{ product.photo.url }}" alt="产品图片" class="img-responsive"
-                                                     onload="DrawImage(this)">
-
-
-                                            </a>
-                                            <div class="carousel-caption nav-title">{{ product.title }}</div>
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="row row-3">
-            <!-- 友情链接 -->
-            <div class="col-md-12">
-            </div>
-        </div>
+{#        <div class="row row-3">#}
+{#            <!-- 友情链接 -->#}
+{#            <div class="col-md-12">#}
+{#            </div>#}
+{#        </div>#}
 
     </div>
 

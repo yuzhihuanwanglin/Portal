@@ -12,7 +12,7 @@ from serviceApp import views
 
 app_name = 'serviceApp'
 urlpatterns = [
-    path('download/', views.download, name='download'),  # 资料下载页面
-    path('getDoc/<int:id>/', views.getDoc, name='getDoc'),  # 资料下载
+    path('download/', views.download, name='download'),  # 文件下载页面
+    path('getDoc/<int:id>/', views.getDoc, name='getDoc'),  # 文件下载
 
 ]

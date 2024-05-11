@@ -24,7 +24,7 @@
 ## 服务支持
 ![image](https://user-images.githubusercontent.com/49242954/132969632-900c6c7c-2c79-449e-8e59-af376e062a61.png)
 
-## 欢迎咨询
+## 欢迎联系
 ![image](https://user-images.githubusercontent.com/49242954/132969649-172715a5-5723-4053-9e44-dbce0fd26bcf.png)
 
 

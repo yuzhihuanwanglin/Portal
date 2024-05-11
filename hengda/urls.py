@@ -28,7 +28,7 @@ urlpatterns = [
     path('serviceApp/', include('serviceApp.urls', namespace='serviceApp')),   # 服务支持
     path('contactApp/', include('contactApp.urls', namespace='contactApp')),  # 关于逻存
     path('newsApp/', include('newsApp.urls', namespace='newsApp')),   # 新闻动态
-    path('productsApp/', include('productsApp.urls', namespace='productsApp')),   # 产品中心
+    # path('productsApp/', include('productsApp.urls', namespace='productsApp')),   # 产品中心
     path('ueditor/', include('DjangoUeditor.urls')),   # 编辑
     path('search/', include('haystack.urls')),    # 添加haystack搜索的路径
 

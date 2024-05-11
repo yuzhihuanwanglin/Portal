@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    资料下载_逻存信息科技
+    文件下载_逻存信息科技
 {% endblock %}
 
 {% block content %}
@@ -24,7 +24,7 @@
                 <div class="model-list">
                     <ul class="list-group">
                         <li class="list-group-item" id='download'>
-                            <a href="{% url 'serviceApp:download' %}">资料下载</a>
+                            <a href="{% url 'serviceApp:download' %}">文件下载</a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,7 @@
             <!-- 说明文字和图片 -->
             <div class="col-md-9">
                 <div class="model-details-title">
-                    资料列表
+                    文件列表
                 </div>
                 <div class="model-details">
                     {% for doc in docList %}

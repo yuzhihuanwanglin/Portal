@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'haystack',
     'homeApp',      # 首页
     'aboutApp',     # 简介
-    'contactApp',   # 欢迎咨询
+    'contactApp',   # 欢迎联系
     'newsApp',      # 新闻动态
     'productsApp',  # 产品中心
     'serviceApp',   # 服务支持
