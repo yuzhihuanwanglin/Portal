@@ -1,5 +1,5 @@
 # hengda这是一个利用django框架仿照逻存信息科技网站的项目，本项目只用于学习，不用于商业研究
-在项目中，分为科研模块，产品模块，关于逻存等模块，里面运用了很多知识点和现有的库包，例如：高级搜索：django-haystack，人脸识别API，自动生成word，dpf，发送邮件等功能；
+在项目中，分为科研模块，产品模块，更多信息等模块，里面运用了很多知识点和现有的库包，例如：高级搜索：django-haystack，人脸识别API，自动生成word，dpf，发送邮件等功能；
 在后台上，采用了现有的xadmin模块优化后台页面。
 
 # 效果图
@@ -21,7 +21,7 @@
 ## 产品中心
 ![image](https://user-images.githubusercontent.com/49242954/132969625-688f2411-3e0a-4e86-a1c7-15f43f81a4ab.png)
 
-## 服务支持
+## 软件服务
 ![image](https://user-images.githubusercontent.com/49242954/132969632-900c6c7c-2c79-449e-8e59-af376e062a61.png)
 
 ## 欢迎联系

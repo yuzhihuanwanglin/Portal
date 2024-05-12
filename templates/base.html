@@ -36,7 +36,8 @@
                     <a href="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'aboutApp:survey' %}">企业概况</a></li>
-                        <li><a href="{% url 'aboutApp:honor' %}">荣誉资质</a></li>
+{#                        <li><a href="{% url 'aboutApp:honor' %}">荣誉资质</a></li>#}
+                         <li><a class="link-color" href="{% url 'contactApp:contact' %}">联系我们</a></li>
                     </ul>
                 </li>
                 <li class="dropdown nav-top">
@@ -56,7 +57,7 @@
 {#                    </ul>#}
 {#                </li>#}
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">服务支持</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">软件服务</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'serviceApp:download' %}">文件下载</a></li>
 
@@ -65,13 +66,13 @@
 {#                <li class="dropdown nav-top">#}
 {#                    <a href="{% url 'scienceApp:science' %}">科研基地</a>#}
 {#                </li>#}
-                <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">关于逻存</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'contactApp:contact' %}">联系我们</a></li>
+{#                <li class="dropdown nav-top">#}
+{#                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">更多信息</a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a href="{% url 'contactApp:contact' %}">联系我们</a></li>#}
 {#                        <li><a href="{% url 'contactApp:recruit' %}">加入恒达</a></li>#}
-                    </ul>
-                </li>
+{#                    </ul>#}
+{#                </li>#}
             </ul>
         </div>
     </div>
@@ -91,7 +92,7 @@
             <dl>
                 <dt>简介</dt>
                 <dd><a href="/aboutApp/survey/">概况</a></dd>
-                <dd><a href="/aboutApp/honor/">荣誉资质</a></dd>
+{#                <dd><a href="/aboutApp/honor/">荣誉资质</a></dd>#}
             </dl>
         </div>
 {#        <div class="col-md-2">#}
@@ -104,13 +105,13 @@
 {#人脸识别接口文档        </div>#}
         <div class="col-md-2">
             <dl>
-                <dt>服务支持</dt>
+                <dt>软件服务</dt>
                 <dd><a href="/serviceApp/download/">文件下载</a></dd>}
             </dl>
         </div>
         <div class="col-md-2">
             <dl>
-                <dt>关于逻存</dt>
+                <dt>更多信息</dt>
                 <dd><a href="/contactApp/contact/">联系我们</a></dd>
 {#                <dd><a href="/contactApp/recruit/">加入恒达</a></dd>#}
             </dl>

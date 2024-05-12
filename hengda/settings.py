@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'contactApp',   # 欢迎联系
     'newsApp',      # 新闻动态
     'productsApp',  # 产品中心
-    'serviceApp',   # 服务支持
+    'serviceApp',   # 软件服务
     # 'scienceApp',   # 科研基地
     # xadmin后台
     'xadmin',
