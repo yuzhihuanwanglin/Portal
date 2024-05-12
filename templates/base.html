@@ -30,10 +30,10 @@
         <div class="collapse navbar-collapse" id="bs-example">
             <ul class="nav navbar-nav">
                 <li class="nav-top">
-                    <a href="{% url 'home' %}">首页</a>
+                    <a href="{% url 'home' %}"  style="font-weight: bolder;color: black;">首页</a>
                 </li>
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bolder;color: black;">公司简介</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'aboutApp:survey' %}">企业概况</a></li>
 {#                        <li><a href="{% url 'aboutApp:honor' %}">荣誉资质</a></li>#}
@@ -41,7 +41,7 @@
                     </ul>
                 </li>
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">新闻动态</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bolder;color: black;">新闻动态</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'newsApp:news' 'company' %}">公司要闻</a></li>
                         <li><a href="{% url 'newsApp:news' 'industry' %}">行业新闻</a></li>
@@ -57,7 +57,7 @@
 {#                    </ul>#}
 {#                </li>#}
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">软件服务</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bold; color: black;">软件服务</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'serviceApp:download' %}">文件下载</a></li>
 
