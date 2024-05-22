@@ -101,7 +101,7 @@ DATABASES = {
         'NAME': 'hengda',
         'USER': 'root',
         'PASSWORD': 'Master20',
-        'HOST': 'jade20.cn',
+        'HOST': '47.120.24.140',
         'POST': '3306',
     }
 }

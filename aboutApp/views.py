@@ -19,3 +19,15 @@ def honor(request):
         'sub_menu': 'honor'
     }
     return render(request, 'aboutApp/honor.html', context)
+
+
+def service_terms(request):
+    context = {
+    }
+    return render(request, 'aboutApp/service_terms.html', context)
+
+
+def privacy_policy(request):
+    context = {
+    }
+    return render(request, 'aboutApp/privacy_policy.html', context)
