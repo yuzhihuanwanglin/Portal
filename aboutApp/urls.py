@@ -14,6 +14,8 @@ app_name = 'aboutApp'
 urlpatterns = [
     path('survey/', views.survey, name='survey'),
     path('honor/', views.honor, name='honor'),
+    path('service_terms/', views.service_terms, name='service_terms'),
+    path('privacy_policy/', views.privacy_policy, name='privacy_policy'),
 
 
 ]

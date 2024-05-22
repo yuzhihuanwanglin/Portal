@@ -86,6 +86,7 @@ def getDoc(request, id):
     """下载文件"""
     doc = get_object_or_404(Doc, id=id)
 
+    print(str(doc.file))
     update_to, filename = str(doc.file).split('/')  # 文件路径和名字
     # 获取文件的路径
     file_path = '%s/media/%s/%s' % (os.getcwd(), update_to, filename)

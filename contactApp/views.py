@@ -15,7 +15,7 @@ def contact(request):
 
 
 def recruit(request):
-    """人才招聘页面"""
+    """更多信息页面"""
     AdList = Ad.objects.all().order_by('-publish_date')
     if request.method == 'POST':
         resumeForm = ResumeForm(data=request.POST, files=request.FILES)

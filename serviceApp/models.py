@@ -5,7 +5,7 @@ from django.utils import timezone
 
 
 class Doc(models.Model):
-    """资料下载"""
+    """文件下载"""
     title = models.CharField(max_length=40, verbose_name="资料名称")
     file = models.FileField(upload_to='Service/', blank=True, verbose_name="文件资料")
     publish_date = models.DateTimeField(max_length=20, default=timezone.now, verbose_name="上传时间")

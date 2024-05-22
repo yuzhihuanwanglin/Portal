@@ -30,48 +30,49 @@
         <div class="collapse navbar-collapse" id="bs-example">
             <ul class="nav navbar-nav">
                 <li class="nav-top">
-                    <a href="{% url 'home' %}">首页</a>
+                    <a href="{% url 'home' %}"  style="font-weight: bolder;color: black;">首页</a>
                 </li>
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">公司简介</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bolder;color: black;">公司简介</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'aboutApp:survey' %}">企业概况</a></li>
-                        <li><a href="{% url 'aboutApp:honor' %}">荣誉资质</a></li>
+{#                        <li><a href="{% url 'aboutApp:honor' %}">荣誉资质</a></li>#}
+                         <li><a class="link-color" href="{% url 'contactApp:contact' %}">联系我们</a></li>
                     </ul>
                 </li>
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">新闻动态</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bolder;color: black;">新闻动态</a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'newsApp:news' 'company' %}">公司要闻</a></li>
                         <li><a href="{% url 'newsApp:news' 'industry' %}">行业新闻</a></li>
                         <li><a href="{% url 'newsApp:news' 'notice' %}">通知公告</a></li>
                     </ul>
                 </li>
+{#                <li class="dropdown nav-top">#}
+{#                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">产品中心</a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a href="{% url 'productsApp:products' 'robot' %}">家用机器人</a></li>#}
+{#                        <li><a href="{% url 'productsApp:products' 'monitor' %}">智能门锁</a></li>#}
+{#                        <li><a href="{% url 'productsApp:products' 'face' %}">人脸识别项目</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
                 <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">产品中心</a>
+                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown" style="font-weight: bold; color: black;">软件服务</a>
                     <ul class="dropdown-menu">
-                        <li><a href="{% url 'productsApp:products' 'robot' %}">家用机器人</a></li>
-                        <li><a href="{% url 'productsApp:products' 'monitor' %}">智能门锁</a></li>
-                        <li><a href="{% url 'productsApp:products' 'face' %}">人脸识别项目</a></li>
+                        <li><a href="{% url 'serviceApp:download' %}">文件下载</a></li>
+
                     </ul>
                 </li>
-                <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">服务支持</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'serviceApp:download' %}">资料下载</a></li>
-                    
-                    </ul>
-                </li>
-                <li class="dropdown nav-top">
-                    <a href="{% url 'scienceApp:science' %}">科研基地</a>
-                </li>
-                <li class="dropdown nav-top">
-                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">人才招聘</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{% url 'contactApp:contact' %}">联系我们</a></li>
-                        <li><a href="{% url 'contactApp:recruit' %}">加入恒达</a></li>
-                    </ul>
-                </li>
+{#                <li class="dropdown nav-top">#}
+{#                    <a href="{% url 'scienceApp:science' %}">科研基地</a>#}
+{#                </li>#}
+{#                <li class="dropdown nav-top">#}
+{#                    <a href="#" class="dropdown-toggle on" data-toggle="dropdown">更多信息</a>#}
+{#                    <ul class="dropdown-menu">#}
+{#                        <li><a href="{% url 'contactApp:contact' %}">联系我们</a></li>#}
+{#                        <li><a href="{% url 'contactApp:recruit' %}">加入恒达</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
             </ul>
         </div>
     </div>
@@ -91,39 +92,39 @@
             <dl>
                 <dt>简介</dt>
                 <dd><a href="/aboutApp/survey/">概况</a></dd>
-                <dd><a href="/aboutApp/honor/">荣誉资质</a></dd>
+{#                <dd><a href="/aboutApp/honor/">荣誉资质</a></dd>#}
+            </dl>
+        </div>
+{#        <div class="col-md-2">#}
+{#            <dl>#}
+{#                <dt>产品中心</dt>#}
+{#                <dd><a href="/productsApp/products/robot/">家用机器人</a></dd>#}
+{#                <dd><a href="/productsApp/products/monitor/">智能门锁</a></dd>#}
+{#                <dd><a href="/productsApp/products/face/">人脸识别解决方案</a></dd>#}
+{#            </dl>#}
+{#人脸识别接口文档        </div>#}
+        <div class="col-md-2">
+            <dl>
+                <dt>软件服务</dt>
+                <dd><a href="/serviceApp/download/">文件下载</a></dd>}
             </dl>
         </div>
         <div class="col-md-2">
             <dl>
-                <dt>产品中心</dt>
-                <dd><a href="/productsApp/products/robot/">家用机器人</a></dd>
-                <dd><a href="/productsApp/products/monitor/">智能门锁</a></dd>
-                <dd><a href="/productsApp/products/face/">人脸识别解决方案</a></dd>
-            </dl>
-人脸识别接口文档        </div>
-        <div class="col-md-2">
-            <dl>
-                <dt>服务支持</dt>
-                <dd><a href="/serviceApp/download/">资料下载</a></dd>}
-            </dl>
-        </div>
-        <div class="col-md-2">
-            <dl>
-                <dt>人才招聘</dt>
+                <dt>更多信息</dt>
                 <dd><a href="/contactApp/contact/">联系我们</a></dd>
-                <dd><a href="/contactApp/recruit/">加入恒达</a></dd>
+{#                <dd><a href="/contactApp/recruit/">加入恒达</a></dd>#}
             </dl>
         </div>
-        <div class="col-md-4" id="wx">
-            <p>扫描二维码，关注我们</p>
-            <img class="qrimg" src="/static/img/qr.png" alt="wx">
-            <p>客服热线：<b style="font-size:20px">400 000 0000</b></p>
-        </div>
+{#        <div class="col-md-4" id="wx">#}
+{#            <p>扫描二维码，关注我们</p>#}
+{#            <img class="qrimg" src="/static/img/qr.png" alt="wx">#}
+{#            <p>客服热线：<b style="font-size:20px">400 000 0000</b></p>#}
+{#        </div>#}
     </div>
     <!-- 版权 -->
     <div class="row " id="patent-footer">
-        <p class="foot_top"> © 2021 Python Web恒达科技官网开发示例 版权所有 | 粤ICP备19006378号</p>
+        <p class="foot_top"> © 2024 上海逻存信息科技有限公司官网 版权所有 | 沪ICP备2024070089号</p>
     </div>
 </div>
 

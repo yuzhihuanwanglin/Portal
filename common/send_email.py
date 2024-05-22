@@ -36,7 +36,7 @@ def post_save_resume(sender, instance, **kwargs):
     email = instance.email  # 获取到应聘者邮箱
     EMAIL_FROM = 'z1915270314@163.com'  # 发送者邮箱
     if instance.__original_status == 1 and instance.status == 2:
-        email_title = '恒达科技有限公司招聘初试结果'
+        email_title = '逻存信息科技有限公司招聘初试结果'
         email_body = '恭喜您通过本企业的初试，请您本周六到公司进行第二次面试！'
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
 
@@ -86,7 +86,7 @@ def post_save_resume(sender, instance, **kwargs):
             print("word文件不存在")
 
     elif instance.__original_status == 1 and instance.status == 3:
-        email_title = '恒达科技有限公司招聘初试结果'
+        email_title = '逻存信息科技有限公司招聘初试结果'
         email_body = '很遗憾，您未能通过本企业的初试，感谢您的关注！'
         send_status = send_mail(email_title, email_body, EMAIL_FROM, [email])
     print(send_status)

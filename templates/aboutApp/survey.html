@@ -2,16 +2,19 @@
 {% load static %}
 
 {% block title %}
-    企业概况_恒达科技
+    企业概况_逻存信息科技
 {% endblock %}
 
 {% block content %}
 <!-- 广告横幅 -->
 <div class="container-fluid">
     <div class="row">
-        <img class="img-responsive model-img" src="{% static 'img/about.jpg' %}">
+        <img class="img-responsive survey-img"  src="https://img0.baidu.com/it/u=4275665245,2720186812&fm=253&fmt=auto&app=138&f=JPEG?w=1920&h=500">
+
+{#        <img class="img-responsive survey-img" src="{% static 'img/new.jpg' %}">#}
     </div>
 </div>
+
 <!-- 主体内容 -->
 <div class="container">
     <div class="row row-3">
@@ -25,9 +28,9 @@
                     <li class="list-group-item" id="survey">
                         <a href="{% url 'aboutApp:survey' %}">企业概况</a>
                     </li>
-                    <li class="list-group-item" id="honor">
-                        <a href="{% url 'aboutApp:honor' %}">荣誉资质</a>
-                    </li>
+{#                    <li class="list-group-item" id="honor">#}
+{#                        <a href="{% url 'aboutApp:honor' %}">荣誉资质</a>#}
+{#                    </li>#}
                 </ul>
             </div>
         </div>
@@ -37,23 +40,26 @@
                 企业概况
             </div>
             <div class="model-details">
-                <div class="row">
-                    <img class="img-responsive" src="{% static 'img/aboutCompany.jpg' %}">
-                </div>
-                <p>
-                    恒达科技有限公司，位于科技园内，致力于人脸识别、
-                    行为识别、机器人视觉核心算法研究和产品应用开发,以社会公共安全领域为主要应用方向，
-                    提供极速、准确和防伪装的人脸识别产品，以及人工智能一体化整体解决方案。主营产品：
-                    家用机器人、智能监控、基于人脸和行为识别应用方向的定制开发等服务。
+{#                <div class="row">#}
+{#                    <img class="img-responsive" src="{% static 'img/aboutCompany.jpg' %}">#}
+{#                </div>#}
+                    <p>
+                        逻存信息科技有限企业，互联网软件服务提供商, 以信息检索领域为主要应用方向，提供极速、准确和安全的信息软件服务产品。 目前以及未来将提供一套Jade系列的互联网产品，敬请期待！
+                     </p>
+                     <p> Jade 的使命是保护您的隐私权。我们制作了一套互联网隐私工具——包括我们的 浏览器 和 搜索引擎，帮助您抵御广告、跟踪器和其他试图跟踪您的网络行踪的恶意内容。</p>
 
-                    恒达科技研发团队来自于国家级研究试验室，该团队为全球最早一批从事人脸识别研究机构之一，
-                    研发团队成员早期主要从事人脸识别和行为识别研究。自2019年发布第一款人脸识别加密核验产品
-                    以来，恒达研发团队进入自主人脸识别实践应用探索阶段。鉴于人脸识别技术逐渐走入工业和民用
-                    应用领域市场，研发团队于2012年成立恒达科技有限公司，正式步入企业市场化运作轨道。
-                    自研发团队成立之始，历经10余年的研究和实践沉淀，最后以恒达科技公司亮相工业和民
-                    用应用领域市场，恒达团队经历了近20年的栉风沐雨和砥砺前行。目前，恒达智能监控、
-                    人脸识别技术的应用和服务涵盖了工业和民用领域。
-                </p>
+                     <p> 未来还将包括以下功能其他功能部件"
+
+                        <li>Jade 新闻：个性化的新闻订阅源，来自不同领域的新闻媒体和内容提供商，直接发送到您的浏览器。完全私人体验。</li>
+                        <li>Jade 插件： 一整套插件，支持在线学习，音视频浏览，下载等功能。</li>
+                        <li>Jade 播放列表：直接在您的浏览器中制作您喜爱的内容的播放列表。添加几乎任何媒体，随时随地播放。支持离线播放。</li>
+                        <li>Jade 音视频： 基于人工智能，提供音视频更高优质的播放体验，同时将考虑更省流的播放方式。</li>
+                        <li>Jade 通话： 通话为您的网络浏览器提供无限的私人视频通话体验。无需额外的应用。没有跟踪。同时提供音视频播放基于人工智能的优化。</li>
+                        <li>Jade 钱包： 国际版本直接内置在浏览器中的安全加密钱包。无需安装扩展程序，无需额外下载。这意味着更能抵制应用程序欺骗、网络钓鱼和盗窃的影响。购买、存储、发送和兑换资产；NFT & 多链支持；等等。多合一安全钱包。</li>
+                        <li> Jade 代理 ：国际版本加密您在线执行的全部操作，即使在浏览器之外。覆盖整个设备的每个应用。选择本地服务器以获得更快的连接。</li>
+
+                    </p>
+
             </div>
         </div>
     </div>

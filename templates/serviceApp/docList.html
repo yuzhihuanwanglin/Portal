@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-    资料下载_恒达科技
+    文件下载_逻存信息科技
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,22 @@
     <!-- 广告横幅 -->
     <div class="container-fluid">
         <div class="row">
-            <img class="img-responsive model-img" src="{% static 'img/service.jpg' %}">
+            <img class="img-responsive model-img" src="https://img0.baidu.com/it/u=1249897368,3924246268&fm=253&fmt=auto&app=138&f=JPEG?w=1477&h=500">
+{#            <img class="img-responsive model-img" src="{% static 'img/service.jpg' %}">#}
+
+            
+             <div class="row row-3">
+                 <div class="col-md-4" id="wx">
+                </div>
+                 
+                 <div class="col-md-4" id="wx">
+                </div>
+                <div class="col-md-4" id="wx">
+    {#                <p>扫描二维码，关注我们</p>#}
+                    <img class="qrimg" src="/static/img/qr.png" alt="wx">
+                    <p><b style="font-size:16px">Jade浏览器/android</b></p>
+                </div>
+             </div>
         </div>
     </div>
     <!-- 主体内容 -->
@@ -19,12 +34,12 @@
             <!-- 侧边导航栏 -->
             <div class="col-md-3">
                 <div class="model-title">
-                    服务支持
+                    软件服务
                 </div>
                 <div class="model-list">
                     <ul class="list-group">
                         <li class="list-group-item" id='download'>
-                            <a href="{% url 'serviceApp:download' %}">资料下载</a>
+                            <a href="{% url 'serviceApp:download' %}">文件下载</a>
                         </li>
                     </ul>
                 </div>
@@ -32,7 +47,7 @@
             <!-- 说明文字和图片 -->
             <div class="col-md-9">
                 <div class="model-details-title">
-                    资料列表
+                    文件列表
                 </div>
                 <div class="model-details">
                     {% for doc in docList %}
