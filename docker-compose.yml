@@ -1,0 +1,24 @@
+version: '3'
+services:
+  # db:
+  #   image: mysql:5.7
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 'Master20'
+  #     MYSQL_DATABASE: 'hengda'
+  #   volumes:
+  #     - ./mysqldata:/var/lib/mysql
+  #     - ./mysqlconf:/etc/mysql/conf.d
+  #     - ./mysqllogs:/logs
+  #   ports:
+  #     - '3306:3306'
+  django:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8001
+    volumes:
+      - .:/Portal
+      - /root/Portal/static:/Portal/static
+    ports:
+      - '8001:8001'
+    # depends_on:
+    #   - db
