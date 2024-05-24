@@ -99,3 +99,33 @@ def getDoc(request, id):
     # 规定文件名的下载格式，在文件名为中文时，要加上escape_uri_path
     response['Content-Disposition'] = 'attachment; filename="{}"'.format(escape_uri_path(filename))
     return response
+
+
+def app_info(request):
+    """下载文件"""
+    filename = "jade.info"
+    # 获取文件的路径
+    file_path = '%s/media/Product/%s' % (os.getcwd(), filename)
+    # 将下载文件分批次写入本地磁盘，先不将他们载入文件内存，读取文件，以512B为单位构建迭代器
+    response = StreamingHttpResponse(read_file(file_path, 512))
+
+    # 作为文件直接下载到本机，用户再用软件打开
+    response['Content-Type'] = 'application/octet-stream'
+    # 规定文件名的下载格式，在文件名为中文时，要加上escape_uri_path
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(escape_uri_path(filename))
+    return response
+
+
+def app_apk(request):
+    """下载文件"""
+    filename = "jade.apk"
+    # 获取文件的路径
+    file_path = '%s/media/Product/%s' % (os.getcwd(), filename)
+    # 将下载文件分批次写入本地磁盘，先不将他们载入文件内存，读取文件，以512B为单位构建迭代器
+    response = StreamingHttpResponse(read_file(file_path, 512))
+
+    # 作为文件直接下载到本机，用户再用软件打开
+    response['Content-Type'] = 'application/octet-stream'
+    # 规定文件名的下载格式，在文件名为中文时，要加上escape_uri_path
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(escape_uri_path(filename))
+    return response

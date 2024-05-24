@@ -111,11 +111,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 # 发送邮件的邮箱
-EMAIL_HOST_USER = 'z1915270314@163.com'
+EMAIL_HOST_USER = '13851666408@163.com'
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'APZALHSMARWXSQPC'
+EMAIL_HOST_PASSWORD = 'Master20'
 # 收件人看到的发件人
-EMAIL_FROM = 'python<z1915270314@163.com>'  # 需要和邮箱号码一致
+EMAIL_FROM = 'python<13851666408@163.com>'  # 需要和邮箱号码一致
 EMAIL_USE_TLS = True
 
 # Password validation
@@ -160,6 +160,7 @@ STATICFILES_DIRS = (
 )
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+# print(STATIC_ROOT)
 # print(STATICFILES_DIRS)
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "static"),
